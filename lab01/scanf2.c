@@ -1,9 +1,9 @@
 /***************************************
 * 22Fa - Lab1 *
-* Author: Last name, first name *
-* Email: Your email address *
-* EECS username: Your eecs login user name *
-* Yorku Student #: Your student number
+* Author: Liu, Chenxi *
+* Email: w1nfred@my.yorku.ca *
+* EECS username: w1nfred *
+* Yorku Student #: 218665075 *
 ****************************************/
 
 #include <stdio.h>
