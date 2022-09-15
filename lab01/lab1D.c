@@ -17,9 +17,13 @@ int main()
    greet(a);
    int b = 1015 - 3;
    greet(b);
-   float x =2.2, y=3.3;
-   float su= sum(x,y);
-   printf( "%f + %f = %f\n", x,y, su);
+
+   float float1; float float2;
+   printf("Enter two float numbers separated by ##: ");
+   scanf("%f##%f", &float1, &float2);
+
+   float su= sum(float1, float2);
+   printf( "%.6f + %.6f = %.6f\n", float1, float2, su);
 
    return 0;
 

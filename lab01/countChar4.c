@@ -11,15 +11,25 @@
 main(){
   int c;
   int count = 0;
+  int lines = 0;
+  int blanks = 0;
  
   c = getchar();
   while(c != EOF)  /* no end of file yet */
-  { 
-    count++;  // spaces and '\n' counted
+  {
+    if(c == 10){
+       lines++;
+       count--;
+    }
 
+    if(c == 32){
+       blanks++;
+    }
+    count++;    // spaces and '\n' counted
     c = getchar(); /* read next */
   }
-  printf("# of chars: %d\n",count);
+  printf("# of chars: %d (# of blanks: %d)\n", count, blanks);
+  printf("# of lines: %d\n", lines);
 
 }
 
