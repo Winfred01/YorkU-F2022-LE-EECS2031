@@ -1,0 +1,32 @@
+Breakpoint 1, main () at swap.c:11
+1: mainA = 1
+2: mainB = 20000
+(gdb) continue
+Continuing.
+
+Breakpoint 2, swap (x=1, y=20000) at swap.c:18
+3: x = 1
+4: y = 20000
+5: x = 1
+(gdb) display mainA
+No symbol "mainA" in current context.
+(gdb) display mainB
+No symbol "mainB" in current context.
+(gdb) continue
+Continuing.
+
+Breakpoint 3, swap (x=20000, y=1) at swap.c:21
+3: x = 20000
+4: y = 1
+5: x = 20000
+(gdb) continue
+Continuing.
+
+Breakpoint 4, main () at swap.c:12
+1: mainA = 1
+2: mainB = 20000
+(gdb) display x
+No symbol "x" in current context.
+(gdb) display y
+No symbol "y" in current context.
+(gdb) quit
